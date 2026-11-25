@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovAI — Inteligência Artificial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">✦</span>
+        <h1>Nov<span>AI</span></h1>
+      </div>
+
+      <div class="status">
+        <span class="status-dot"></span>
+        online
+      </div>
+    </header>
+
+    <main class="chat-container">
+
+      <section class="welcome" id="welcome">
+        <div class="welcome-icon">✦</div>
+
+        <h2>Olá, eu sou a <span>NovAI</span>.</h2>
+
+        <p>
+          Um universo de ideias começa com uma conversa.
+          O que vamos descobrir hoje?
+        </p>
+
+        <div class="suggestions">
+          <button onclick="suggestMessage('Me conte uma curiosidade interessante')">
+            ✧ Me conte uma curiosidade
+          </button>
+
+          <button onclick="suggestMessage('Me ajude a ter uma ideia criativa')">
+            ✧ Vamos criar algo
+          </button>
+
+          <button onclick="suggestMessage('Me ensine algo novo')">
+            ✧ Quero aprender algo
+          </button>
+        </div>
+      </section>
+
+      <div class="messages" id="messages"></div>
+
+    </main>
+
+    <footer class="chat-footer">
+      <div class="input-box">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Converse com a NovAI..."
+          autocomplete="off"
+        >
+
+        <button id="sendButton" aria-label="Enviar mensagem">
+          ➤
+        </button>
+      </div>
+
+      <p class="disclaimer">
+        NovAI • Um universo de possibilidades
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
